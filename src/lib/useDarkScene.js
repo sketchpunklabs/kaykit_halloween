@@ -17,6 +17,6 @@ export default function useDarkScene( tjs ){
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Renderer
-    tjs.renderer.setClearColor( 0x3a3a3a, 1 );
+    // tjs.renderer.setClearColor( 0x3a3a3a, 1 );
     return tjs;
 };

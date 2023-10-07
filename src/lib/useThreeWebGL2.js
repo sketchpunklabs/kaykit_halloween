@@ -48,6 +48,25 @@ export async function useVisualDebug( tjs ){
 }
 // #endregion
 
+// #region EVENTS
+
+class EventDispatcher{
+    _evt = new EventTarget();
+    on( evtName, fn ){ this._evt.addEventListener( evtName, fn ); return this; }
+    off( evtName, fn ){ this._evt.removeEventListener( evtName, fn ); return this; }
+    once( evtName, fn ){ this._evt.addEventListener( evtName, fn, { once:true } ); return this; }
+    emit( evtName, data=null ){
+        this._evt.dispatchEvent( ( !data )
+            ? new Event( evtName, { bubbles:false, cancelable:true, composed:false } ) 
+            : new CustomEvent( evtName, { detail:data, bubbles:false, cancelable:true, composed:false } )
+        );
+        return this;
+    }
+}
+
+// #endregion
+
+
 // #region MAIN
 export default function useThreeWebGL2( props={} ){
     props = Object.assign( {
@@ -110,6 +129,8 @@ export default function useThreeWebGL2( props={} ){
 
     const camCtrl = new OrbitControls( camera, renderer.domElement );
 
+    const events  = new EventDispatcher();
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // METHODS
     let self;   // Need to declare before methods for it to be useable
@@ -121,6 +142,7 @@ export default function useThreeWebGL2( props={} ){
         if( onPreRender )  onPreRender( deltaTime, ellapseTime );
         renderer.render( scene, camera );
         if( onPostRender ) onPostRender( deltaTime, ellapseTime );
+
         return self;
     };
 
@@ -176,8 +198,15 @@ export default function useThreeWebGL2( props={} ){
         }
 
         camera.updateProjectionMatrix();
+        events.emit( 'resize', { width:W, height:h } );
         return self;
     };
+
+    const getRenderSize = ()=>{
+        const v = new THREE.Vector2();
+        renderer.getSize( v );
+        return v.toArray();
+    }
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -189,10 +218,13 @@ export default function useThreeWebGL2( props={} ){
         scene,
         camera,
         camCtrl,
+        clock,
+        events,
 
         render,
         renderLoop,
         createRenderLoop,
+        getRenderSize,
         sphericalLook,
         resize,
 

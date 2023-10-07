@@ -1,4 +1,5 @@
 import useThreeWebGL2, { THREE }    from './lib/useThreeWebGL2.js';
+import usePostEffects               from './lib/usePostEffects.js';
 import useDarkScene                 from './lib/useDarkScene.js';
 import AssetLibrary                 from './lib/AssetLibrary.js';
 import GridMap                      from './lib/GridMap.js';
@@ -15,7 +16,14 @@ export default class App{
         }, props );
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        this.three      = useDarkScene( useThreeWebGL2( { colorMode:true }) );
+        if( !props.postEffects ){
+            this.three = useDarkScene( useThreeWebGL2( { colorMode:true }) );
+            
+        }else{
+            this.three = useDarkScene( usePostEffects( useThreeWebGL2( { colorMode:true }) ) );
+            addEffects( this.three );
+        }
+
         this.renderLoop = this.three.createRenderLoop( this.onPreRender );
         this.assets     = new AssetLibrary();
         this.grid       = new GridMap( [10,10], 4, this.three.scene ).setOffset( -5*4, -5*4 );
@@ -68,6 +76,7 @@ export default class App{
     // #endregion
 }
 
+// #region ANIMATION
 function createWalkHopTask( char, posA, posB, span, hop, hspeed ){
     return ( dt, et, task )=>{
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,3 +106,29 @@ function createWalkHopTask( char, posA, posB, span, hop, hspeed ){
         return false; // This task never ends
     };
 }
+// #endregion
+
+// #region POSTEFFECT
+import UnrealBloomPass from 'postprocess/UnrealBloomPass.js';
+import OutputPass      from 'postprocess/OutputPass.js';
+function addEffects( tjs ){
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // tjs.composer.renderToScreen = false;
+    tjs.renderer.toneMapping         = THREE.ReinhardToneMapping;
+    tjs.renderer.toneMappingExposure = Math.pow( 1, 4.0 );
+    
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    const res           = tjs.getRenderSize();
+    const bloomPass     = new UnrealBloomPass( new THREE.Vector2( res[0], res[1] ) );
+    bloomPass.threshold = 0;
+    bloomPass.strength  = 0.5;
+    bloomPass.radius    = 0.1;
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    const outputPass    = new OutputPass();
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    tjs.composer.addPass( bloomPass );
+    tjs.composer.addPass( outputPass );
+}
+// #endregion
