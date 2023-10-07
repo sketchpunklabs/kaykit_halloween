@@ -25,11 +25,12 @@ Welcome to the the Halloween Scene Challenge. The goal is to take the threejs st
 
 To make it easy to find your creation, how about tagging your social posts with **#threejshalloween**. After halloween is over, I'll try to find as many awesome ones I can & link them here.
 
-### Fun Additions Ideas ###
+### Ideas for fun additions ###
 - Skybox with stars & moon
 - Adding spooky lighting
 - Add bats to the scene & have them fly around
 - Volumetric fog
+- Music synced animation of some kind, like a zombie dance
 
 ### Development Setup ###
 ```
