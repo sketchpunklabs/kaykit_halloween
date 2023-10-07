@@ -1,0 +1,7 @@
+https://cdnjs.com/libraries/three.js
+https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.module.min.js
+
+https://cdn.jsdelivr.net/npm/three@0.157.0/
+https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/controls/OrbitControls.js
+https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/loaders/GLTFLoader.js
+https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/utils/BufferGeometryUtils.js

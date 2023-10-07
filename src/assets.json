@@ -1,0 +1,64 @@
+[
+
+{
+    "url"     : "assets/halloween/", 
+    "files"   : [
+        "floor_dirt.gltf",
+        "floor_dirt_small.gltf",
+        "floor_dirt_grave.gltf",
+        "crypt.gltf",
+        "tree_pine_orange_large.gltf",
+        "tree_pine_orange_medium.gltf",
+        "tree_pine_orange_small.gltf",
+        "tree_pine_yellow_large.gltf",
+        "tree_pine_yellow_medium.gltf",
+        "tree_pine_yellow_small.gltf",
+        "tree_dead_large.gltf",
+        "tree_dead_medium.gltf",
+        "tree_dead_small.gltf",
+        "fence.gltf",
+        "fence_broken.gltf",
+        "arch_gate.gltf",
+        "path_A.gltf",
+        "path_B.gltf",
+        "path_C.gltf",
+        "path_D.gltf",
+        "plaque.gltf",
+        "plaque_candles.gltf",
+        "bench.gltf",
+        "bench_decorated.gltf",
+        "shrine.gltf",
+        "post_lantern.gltf",
+        "gravestone.gltf",
+        "grave_B.gltf",
+        "grave_A_destroyed.gltf",
+        "shrine_candles.gltf",
+        "pumpkin_orange.gltf",
+        "pumpkin_orange_jackolantern.gltf",
+        "pumpkin_orange_small.gltf",
+        "pumpkin_yellow_jackolantern.gltf",
+        "pumpkin_yellow_small.gltf",
+        "gravemarker_A.gltf",
+        "gravemarker_B.gltf",
+        "skull.gltf",
+        "coffin_decorated.gltf",
+        "coffin.gltf",
+        "lantern_standing.gltf"
+    ]
+},
+
+{
+    "url"     : "assets/spooktober/", 
+    "files"   : [
+        "cauldron.gltf.glb"
+    ]
+},
+
+{
+    "url"     : "assets/dungeon/", 
+    "files"   : [
+        "chest.glb"
+    ]
+}
+
+]

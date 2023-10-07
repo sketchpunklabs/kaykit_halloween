@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title></title></head>
+<style>canvas{ display:block; } body, html { padding:0px; margin:0px; width:100%; height:100%; background-color:black; }</style>
+<body><script src="./import-map.js"></script><script type="module">
+// #region IMPORTS
+import App from './src/App.js';
+// #endregion
+
+// #region MAIN
+const app = new App();
+window.addEventListener( 'load', async _=>{
+    app.renderLoop.start();
+});
+// #endregion
+</script></body></html>

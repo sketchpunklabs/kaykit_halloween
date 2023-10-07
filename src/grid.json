@@ -1,0 +1,251 @@
+[
+
+{ 
+    "key"   : "floor_dirt",
+    "inst"  : [
+        { "coordRng":[1,1,6,4], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coordRng":[7,2,7,4], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coordRng":[2,5,7,5], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coordRng":[1,6,7,6], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coordRng":[3,7,6,7], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coord":[1,7], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coord":[4,8], "noffset":[0.5,0.5], "rot":[0,0,0] }
+    ]
+},
+
+{ 
+    "key"   : "floor_dirt_grave",
+    "inst"  : [ { "coord":[2,7], "noffset":[0.5,0.5], "rot":[0,0,0] } ]
+},
+
+{ 
+    "key"   : "floor_dirt_small",
+    "inst"  : [
+        { "coord":[7,1], "noffset":[0.25,0.75], "rot":[0,0,0] },
+        { "coord":[7,7], "noffset":[0.25,0.25], "rot":[0,0,0] },
+        { "coord":[1,8], "noffset":[0.75,0.25], "rot":[0,0,0] },
+        { "coord":[2,8], "noffset":[0.25,0.25], "rot":[0,0,0] },
+        { "coord":[2,8], "noffset":[0.75,0.25], "rot":[0,0,0] },
+        { "coord":[3,8], "noffset":[0.75,0.25], "rot":[0,0,0] },
+        { "coord":[5,8], "noffset":[0.25,0.25], "rot":[0,0,0] }
+    ]
+},
+
+{ 
+    "key"   : "crypt",
+    "inst"  : [ { "coord":[4,3], "noffset":[0.5,0], "rot":[0,0,0] } ]
+},
+
+{ 
+    "key"   : "tree_pine_orange_large",
+    "inst"  : [ { "coord":[1,2], "noffset":[0.6,0.5], "rot":[0,0,0] } ]
+},
+
+{ 
+    "key"   : "tree_pine_orange_medium",
+    "inst"  : [ 
+        { "coord":[1,3], "noffset":[0.5,0.3], "rot":[0,0,0] },
+        { "coord":[5,2], "noffset":[0.6,0.4], "rot":[0,0,0] }
+    ]
+},
+
+{ 
+    "key"   : "tree_pine_orange_small",
+    "inst"  : [ 
+        { "coord":[2,3], "noffset":[0,0], "rot":[0,0,0] },
+        { "coord":[6,2], "noffset":[0.25,0.25], "rot":[0,0,0] }
+    ]
+},
+
+{ 
+    "key"   : "tree_pine_yellow_large",
+    "inst"  : [ { "coord":[5,1], "noffset":[0.75,0.5], "rot":[0,0,0] } ]
+},
+
+{ 
+    "key"   : "tree_pine_yellow_medium",
+    "inst"  : [ { "coord":[2,1], "noffset":[0.3,0.75], "rot":[0,0,0] } ]
+},
+
+{ 
+    "key"   : "tree_pine_yellow_small",
+    "inst"  : [
+        { "coord":[1,4], "noffset":[0.3,0.7], "rot":[0,0,0] },
+        { "coord":[7,5], "noffset":[0.6,0], "rot":[0,0,0] }
+    ]
+},
+
+{ 
+    "key"   : "tree_dead_large",
+    "inst"  : [ 
+        { "coord":[2,2], "noffset":[0.5,0.5], "rot":[0,45,0] },
+        { "coord":[5,3], "noffset":[0.7,0.55], "rot":[0,45,0] },
+        { "coord":[6,6], "noffset":[0.25,0.25], "rot":[0,180,0] },
+        { "coord":[2,6], "noffset":[0.5,0.25], "rot":[0,0,0] }
+    ]
+},
+
+{ 
+    "key"   : "tree_dead_medium",
+    "inst"  : [ 
+        { "coord":[6,1], "noffset":[0.75,0.75], "rot":[0,0,0] },
+        { "coord":[2,1], "noffset":[0.8,0.5], "rot":[0,0,0] }
+    ]
+},
+
+{ 
+    "key"   : "tree_dead_small",
+    "inst"  : [ 
+        { "coord":[7,2], "noffset":[0.35,0.8], "rot":[0,45,0] }
+    ]
+},
+
+{ 
+    "key"   : "fence",
+    "inst"  : [ 
+        { "coord":[3,6], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coordRng":[5,6,6,6], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coord":[7,6], "noffset":[0,0], "rot":[0,90,0] },
+        { "coordRng":[2,4,2,6], "noffset":[0,0], "rot":[0,90,0] }
+    ]
+},
+
+{ 
+    "key"   : "fence_broken",
+    "inst"  : [ 
+        { "coord":[2,6], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coord":[7,5], "noffset":[0,0], "rot":[0,90,0] }
+    ]
+},
+
+{  "key"   : "arch_gate", "inst"  : [ { "coord":[4,6], "noffset":[0.5,0.5], "rot":[0,0,0] } ] },
+
+{  "key"   : "arch_gate_left", "inst"  : [ { "coord":[5,6], "noffset":[-0.13,0.5], "rot":[0,45,0] } ] },
+
+{  "key"   : "arch_gate_right", "inst"  : [ { "coord":[4,6], "noffset":[0.15,0.5], "rot":[0,0,0] } ] },
+
+{ 
+    "key"   : "path_A",
+    "inst"  : [ 
+        { "coord":[4,4], "noffset":[0.26,0.1], "rot":[0,0,0] },
+        { "coord":[4,4], "noffset":[0.26,0.55], "rot":[0,90,0] },
+        { "coord":[4,4], "noffset":[0.74,0.55], "rot":[0,270,0] },
+        { "coord":[4,4], "noffset":[0.74,0.1], "rot":[0,180,0] },
+
+        { "coord":[4,6], "noffset":[0.26,-0.01], "rot":[0,0,0] },
+        { "coord":[4,6], "noffset":[0.26,0.47], "rot":[0,90,0] },
+        { "coord":[4,6], "noffset":[0.74,0.47], "rot":[0,270,0] },
+        { "coord":[4,6], "noffset":[0.74,-0.01], "rot":[0,180,0] },
+
+        { "coord":[3,4], "noffset":[0.25,0.5], "rot":[0,180,0] }
+    ]
+},
+
+{ 
+    "key"   : "path_B",
+    "inst"  : [ 
+        { "coord":[4,5], "noffset":[0.26,0.03], "rot":[0,0,0] },
+        { "coord":[4,5], "noffset":[0.26,0.51], "rot":[0,90,0] },
+        { "coord":[4,5], "noffset":[0.74,0.51], "rot":[0,270,0] },
+        { "coord":[4,5], "noffset":[0.74,0.03], "rot":[0,180,0] },
+        
+        { "coord":[4,7], "noffset":[0.26,-0.05], "rot":[0,0,0] },
+        { "coord":[4,7], "noffset":[0.26,0.43], "rot":[0,90,0] },
+        { "coord":[4,7], "noffset":[0.74,-0.05], "rot":[0,180,0] },
+
+        { "coord":[3,4], "noffset":[0.75,0.5], "rot":[0,180,0] }
+    ]
+},
+
+{ 
+    "key"   : "path_C",
+    "inst"  : [ 
+        { "coord":[4,7], "noffset":[0.74,0.43], "rot":[0,0,0] },
+        { "coord":[5,4], "noffset":[0.22,0.5], "rot":[0,0,0] },
+        { "coord":[2,4], "noffset":[0.77,0.5], "rot":[0,180,0] }
+    ]
+},
+
+{ 
+    "key"   : "path_D",
+    "inst"  : [ 
+        { "coord":[4,8], "noffset":[0.25,-0.1], "rot":[0,0,0] },
+        { "coord":[2,4], "noffset":[0.28,0.5], "rot":[0,0,0] },
+        { "coord":[5,4], "noffset":[0.70,0.5], "rot":[0,90,0] }
+    ]
+},
+
+{  "key"   : "plaque", "inst"  : [ { "coord":[6,4], "noffset":[0,0], "rot":[0,0,0] } ] },
+{  "key"   : "plaque_candles", "inst"  : [ { "coord":[2,5], "noffset":[0.5,0.1], "rot":[0,0,0] } ] },
+
+{  "key"   : "bench_decorated", "inst"  : [ { "coord":[6,5], "noffset":[0,0.3], "rot":[0,0,0] } ] },
+{  
+    "key"   : "bench", 
+    "inst"  : [
+        { "coord":[2,5], "noffset":[0.5,0.55], "rot":[0,0,0] },
+        { "coord":[2,5], "noffset":[1,0.1], "rot":[0,90,0] },
+        { "coord":[7,6], "noffset":[0.35,0.65], "rot":[0,100,0] }
+    ] 
+},
+
+{  "key"   : "shrine", "inst"  : [ { "coord":[6,3], "noffset":[0,0], "rot":[0,0,0] } ] },
+{  "key"   : "post_lantern", "inst"  : [ { "coord":[3,7], "noffset":[0.7,0.25], "rot":[0,0,0] } ] },
+{  "key"   : "post_lantern_lantern", "inst"  : [ { "coord":[3,7], "noffset":[0.7,0.53], "rot":[0,0,0], "ypos":3 } ] },
+
+{  "key"   : "gravestone", "inst"  : [ { "coord":[5,3], "noffset":[0.5,0.7], "rot":[0,23,0] } ] },
+{  "key"   : "grave_B", "inst"  : [ { "coord":[6,5], "noffset":[0,0], "rot":[0,0,0] } ] },
+{  "key"   : "grave_A_destroyed", "inst"  : [ { "coord":[3,4], "noffset":[0,0], "rot":[0,0,0] } ] },
+{  "key"   : "shrine_candles", "inst"  : [ { "coord":[3,3], "noffset":[0,0], "rot":[0,0,0] } ] },
+
+{  
+    "key"   : "pumpkin_orange_jackolantern", 
+    "inst"  : [ 
+        { "coord":[6,2], "noffset":[0.7,0.3], "rot":[0,0,0] },
+        { "coord":[2,3], "noffset":[0.35,0.7], "rot":[0,35,0] },
+        { "coord":[3,7], "noffset":[0.5,0], "rot":[0,0,0] }
+    ]
+},
+{  
+    "key"   : "pumpkin_orange_small", 
+    "inst"  : [ 
+        { "coord":[2,3], "noffset":[0.15,0.9], "rot":[0,0,0] },
+        { "coord":[3,7], "noffset":[0.2,0.1], "rot":[0,0,0] },
+        { "coord":[6,2], "noffset":[0.5,0.5], "rot":[0,0,0] },
+        { "coord":[7,3], "noffset":[0.7,0.3], "rot":[0,0,0] }
+    ]
+},
+{  "key"   : "pumpkin_yellow_jackolantern",  "inst"  : [ { "coord":[6,7], "noffset":[0,0], "rot":[0,25,0] } ] },
+{  "key"   : "pumpkin_yellow_small",  "inst"  : [ { "coord":[5,7], "noffset":[0.9,0.24], "rot":[0,0,0] } ] },
+{  "key"   : "pumpkin_orange", "inst"  : [ { "coord":[5,7], "noffset":[0.72,0.1], "rot":[0,0,0] } ] },
+
+{  
+    "key"   : "gravemarker_A", 
+    "inst"  : [ 
+        { "coord":[6,7], "noffset":[0.4,0], "rot":[0,25,0] },
+        { "coord":[7,3], "noffset":[0.6,0.25], "rot":[0,25,0] }
+    ]
+},
+{  
+    "key"   : "gravemarker_B", 
+    "inst"  : [ 
+        { "coord":[6,7], "noffset":[0.7,-0.1], "rot":[0,0,0] },
+        { "coord":[2,7], "noffset":[0.5,-0.1], "rot":[0,0,0] }
+    ]
+},
+
+{  "key"   : "skull", "inst"  : [ { "coord":[2,7], "noffset":[0.1,0.1], "rot":[-10,25,0], "ypos":-0.05 } ] },
+
+{  "key"   : "coffin_decorated", "inst"  : [ { "coord":[6,3], "noffset":[0.6,0.75], "rot":[0,0,0] } ] },
+{  "key"   : "coffin", "inst"  : [ { "coord":[1,7], "noffset":[0.82,0.5], "rot":[0,15,0] } ] },
+{  "key"   : "coffin_lid", "inst"  : [ { "coord":[1,7], "noffset":[0.75,0.55], "rot":[0,40,0] } ] },
+{  "key"   : "lantern_standing", "inst"  : [ { "coord":[2,8], "noffset":[0.1,0.1], "rot":[0,10,0] } ] },
+
+{  "key"   : "Sphere015", "inst"  : [ { "coord":[4,1], "noffset":[0.3,0.8], "rot":[0,0,0] } ] },
+{  "key"   : "Sphere015_1", "inst"  : [ { "coord":[4,1], "noffset":[0.3,0.8], "rot":[0,0,0] } ] },
+{  "key"   : "Sphere015_2", "inst"  : [ { "coord":[4,1], "noffset":[0.3,0.8], "rot":[0,0,0] } ] },
+{  "key"   : "Sphere015_3", "inst"  : [ { "coord":[4,1], "noffset":[0.3,0.8], "rot":[0,0,0] } ] },
+
+
+{  "key"   : "chest", "inst"  : [ { "coord":[4,1], "noffset":[0.9,0.8], "rot":[0,180,0] } ] },
+{  "key"   : "chest_lid", "inst"  : [ { "coord":[4,1], "noffset":[0.9,0.9], "rot":[-40,180,0], "ypos":0.5 } ] }
+]

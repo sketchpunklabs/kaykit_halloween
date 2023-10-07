@@ -1,0 +1,16 @@
+{
+	"name"			: "kaykit_halloween",
+	"version"		: "0.0.0.1",
+	"description"	: "Halloween Scene Challange",
+	"keywords"		: [ "webgl", "threejs", "kaykit" ],
+	"repository"	: { "url": "https://github.com/sketchpunklabs/kaykit_halloween.git", "type": "git" },
+	"author"		: { "name": "Sketchpunk", "email": "tmp@tmp.com", "url": "http://tmp" },
+	"license"		: "MIT",
+
+	"devDependencies": {
+		"browser-sync"  : "^2.27.5"
+	},
+	"scripts": {				
+		"dev"  : "browser-sync start --config bs-config.js"
+	}
+}
