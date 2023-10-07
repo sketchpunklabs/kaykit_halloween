@@ -1,5 +1,5 @@
 // in the future can prob do : <script type="importmap" src="/import-map.json"></script>
-const prepend = ( document.location.hostname.indexOf( 'localhost' ) === -1 )? '/katkit_holloween' : '';
+const prepend = ( document.location.hostname.indexOf( 'localhost' ) === -1 )? '/kaykit_halloween' : '';
 
 document.body.appendChild(Object.assign(document.createElement('script'), {
 type		: 'importmap',
